@@ -1,20 +1,17 @@
 public class Main {
 
   public static void main(String[] args) {
-    MinHeap minHeap = new MinHeap(10);
-    minHeap.insert(17);
-    minHeap.insert(15);
-    minHeap.insert(20);
-    minHeap.insert(14);
-    minHeap.insert(10);
-    minHeap.insert(21);
-    minHeap.insert(1);
-    minHeap.insert(2);
-    minHeap.print();
-    printElement(minHeap.pop());
-    minHeap.print();
-    printElement(minHeap.pop());
-    minHeap.print();
+    LinkedList linkedList = new LinkedList();
+    linkedList.append(5);
+    linkedList.append(10);
+    linkedList.append(1);
+    linkedList.append(100);
+    linkedList.append(20);
+    linkedList.printAll();
+    linkedList.removeElement(1);
+    linkedList.printAll();
+    linkedList.removeElement(5);
+    linkedList.printAll();
   }
 
 
