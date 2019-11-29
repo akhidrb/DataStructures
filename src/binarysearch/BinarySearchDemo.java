@@ -25,6 +25,18 @@ public class BinarySearchDemo {
     System.out.println(binarySearchContext.executeStrategy(numbers, 560));
     System.out.println(binarySearchContext.executeStrategy(numbers, 23));
 
+    System.out.println("Implemenation BinarySearch on String:");
+    String[] names = {"abdelgawad", "abdelrahman", "abraheem", "asmaa", "asmahan", "elsa", "ismail",
+        "jack", "karmen", "kawthar", "lama", "lamis", "lobna", "zakaria"};
+    BinaryStringSearchRecur binaryStringSearchRecur = new BinaryStringSearchRecur();
+    System.out.println(binaryStringSearchRecur.binarySearch(names, "abraheem"));
+    System.out.println(binaryStringSearchRecur.binarySearch(names, "ismail"));
+    System.out.println(binaryStringSearchRecur.binarySearch(names, "lama"));
+
+    System.out.println(binaryStringSearchRecur.binarySearch(names, "lamia"));
+    System.out.println(binaryStringSearchRecur.binarySearch(names, "dajani"));
+    System.out.println(binaryStringSearchRecur.binarySearch(names, "yusuf"));
+
 
   }
 
