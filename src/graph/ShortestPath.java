@@ -36,13 +36,20 @@ public class ShortestPath {
     return distances;
   }
 
+  public int getShortestDistance(int start, int finish) {
+    int[] distances = getDistances(start);
+    return distances[finish];
+  }
+
+
   public static void main(String[] args) {
-    Graph graph = new Graph(9);
+    Graph graph = new Graph(10);
     graph.addEdge(1, 2);
     graph.addEdge(1, 3);
-    graph.addEdge(3, 0);
+    graph.addEdge(3, 9);
     graph.addEdge(3, 4);
     graph.addEdge(3, 6);
+    graph.addEdge(0, 9);
     graph.addEdge(0, 4);
     graph.addEdge(0, 5);
     graph.addEdge(4, 5);
@@ -55,6 +62,8 @@ public class ShortestPath {
     for (int i = 0; i < 9; i++) {
       System.out.println(i + ": " + distances[i]);
     }
+
+    System.out.println("Shortest Distance: " + shortestPath.getShortestDistance(6, 5));
 
   }
 
