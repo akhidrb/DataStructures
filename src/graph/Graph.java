@@ -4,8 +4,8 @@ import java.util.LinkedList;
 
 public class Graph {
 
-  int numberOfNodes;
-  LinkedList<Integer> node[];
+  private int numberOfNodes;
+  private LinkedList<Integer>[] node;
 
   public Graph(int numberOfNodes) {
     this.numberOfNodes = numberOfNodes;
@@ -14,6 +14,14 @@ public class Graph {
     for (int i = 0; i < numberOfNodes; i++) {
       this.node[i] = new LinkedList<>();
     }
+  }
+
+  public LinkedList<Integer> getNode(int index) {
+    return node[index];
+  }
+
+  public int getNumberOfNodes() {
+    return numberOfNodes;
   }
 
   public void addEdge(int src, int dst) {
