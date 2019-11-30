@@ -1,3 +1,5 @@
+package heap;
+
 public class MinHeap {
 
   private int[] Heap;
